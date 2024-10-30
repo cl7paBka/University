@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Меню</title>
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<style>
+			.item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				margin: 10px;
+			}
+			.item img {
+				width: 150px;
+				height: auto;
+				border-radius: 10px;
+			}
+			.item p,
+			.item table {
+				margin: 10px 0;
+			}
+			.categories {
+				display: flex;
+				justify-content: space-around;
+				flex-wrap: wrap;
+			}
+			.category {
+				width: 100%;
+				text-align: center;
+				margin: 20px 0;
+			}
+			.category-items {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: 20px;
+			}
+			button {
+				background-color: #ff870e;
+				color: #ffffff;
+				border: none;
+				padding: 10px 20px;
+				border-radius: 20px;
+				cursor: pointer;
+			}
+			button:hover {
+				background-color: #e65a00;
+			}
+			table {
+				border-collapse: collapse;
+				width: 100%;
+			}
+			th,
+			td {
+				border: 1px solid #ddd;
+				padding: 8px;
+			}
+			th {
+				background-color: #f2f2f2;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="wrapper">
+				<nav>
+					<ul>
+						<li
+							class="logo-img"
+							style="width: 75px">
+							<img
+								src="img/logo.png"
+								alt="Logo" />
+						</li>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="menu.html">Меню</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div class="wrapper">
+				<h2>Меню</h2>
+				<div class="categories">
+					<!-- Пиццы -->
+					<div class="category">
+						<h3>Пиццы</h3>
+						<div class="category-items">
+							<!-- таблицы в таблицах  -->
+							<div class="item">
+								<img
+									src="img/menu/1.avif"
+									alt="Пепперони" />
+								<p>Пепперони</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Размер</td>
+										<td>30 см</td>
+									</tr>
+									<tr>
+										<td>Вес</td>
+										<td>500 г</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Тесто</td>
+													<td>Тонкое</td>
+												</tr>
+												<tr>
+													<td>Соус</td>
+													<td>Томатный</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>500 руб.</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+							<div class="item">
+								<img
+									src="img/menu/2.avif"
+									alt="Маргарита" />
+								<p>Маргарита</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Размер</td>
+										<td>30 см</td>
+									</tr>
+									<tr>
+										<td>Вес</td>
+										<td>450 г</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Тесто</td>
+													<td>Тонкое</td>
+												</tr>
+												<tr>
+													<td>Соус</td>
+													<td>Фирменный</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>450 руб.</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+							<div class="item">
+								<img
+									src="img/menu/3.avif"
+									alt="Гавайская" />
+								<p>Гавайская</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Размер</td>
+										<td>30 см</td>
+									</tr>
+									<tr>
+										<td>Вес</td>
+										<td>500 г</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Тесто</td>
+													<td>Тонкое</td>
+												</tr>
+												<tr>
+													<td>Соус</td>
+													<td>Альфредо</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>550 руб.</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+							<div class="item">
+								<img
+									src="img/menu/4.avif"
+									alt="4 Сыра" />
+								<p>4 Сыра</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Размер</td>
+										<td>30 см</td>
+									</tr>
+									<tr>
+										<td>Вес</td>
+										<td>480 г</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Тесто</td>
+													<td>Тонкое</td>
+												</tr>
+												<tr>
+													<td>Соус</td>
+													<td>Сливочный</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>600 руб.</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Комбо -->
+					<div class="category">
+						<h3>Комбо</h3>
+						<div class="category-items">
+							<div class="item">
+								<img
+									src="img/menu/5.avif"
+									alt="Комбо 1" />
+								<p>2 пиццы + напиток</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Состав</td>
+										<td>2 пиццы + напиток</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Соус</td>
+													<td>Сырный</td>
+												</tr>
+												<tr>
+													<td>Напиток</td>
+													<td>Кола 0.5 л</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>650 ₽</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+							<div class="item">
+								<img
+									src="img/menu/6.avif"
+									alt="Комбо 2" />
+								<p>2 кофе + додстер + омлет</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Состав</td>
+										<td>2 кофе + додстер + омлет</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Кофе</td>
+													<td>Капучино</td>
+												</tr>
+												<tr>
+													<td>Соус</td>
+													<td>Томатный</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>550 ₽</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+							<div class="item">
+								<img
+									src="img/menu/7.avif"
+									alt="Комбо 3" />
+								<p>3 пиццы</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Состав</td>
+										<td>3 пиццы</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Соус</td>
+													<td>Томатный</td>
+												</tr>
+												<tr>
+													<td>Сыр</td>
+													<td>Моцарелла</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>1300 ₽</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+							<div class="item">
+								<img
+									src="img/menu/8.avif"
+									alt="Комбо 4" />
+								<p>2 додстера</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Состав</td>
+										<td>2 додстера</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Соус</td>
+													<td>Сырный</td>
+												</tr>
+												<tr>
+													<td>Сыр</td>
+													<td>Чеддер</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>200 ₽</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+						</div>
+					</div>
+					<!-- Напитки -->
+					<div class="category">
+						<h3>Напитки</h3>
+						<div class="category-items">
+							<div class="item">
+								<img
+									src="img/menu/9.avif"
+									alt="Кола" />
+								<p>Какао</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Объем</td>
+										<td>0.5 л</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>100 ₽</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Упаковка</td>
+													<td>Пластиковый стакан</td>
+												</tr>
+												<tr>
+													<td>Производитель</td>
+													<td>Мы</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+							<div class="item">
+								<img
+									src="img/menu/10.avif"
+									alt="Кола малина" />
+								<p>Кола малина</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Объем</td>
+										<td>0.5 л</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>100 ₽</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Упаковка</td>
+													<td>Пластиковая бутылка</td>
+												</tr>
+												<tr>
+													<td>Производитель</td>
+													<td>Добрый</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+							<div class="item">
+								<img
+									src="img/menu/11.avif"
+									alt="Спрайт" />
+								<p>Спрайт</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Объем</td>
+										<td>0.5 л</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>100 ₽</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Упаковка</td>
+													<td>Пластиковая бутылка</td>
+												</tr>
+												<tr>
+													<td>Производитель</td>
+													<td>Добрый</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+							<div class="item">
+								<img
+									src="img/menu/12.avif"
+									alt="Фанта" />
+								<p>Фанта</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Объем</td>
+										<td>0.5 л</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>100 ₽</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Упаковка</td>
+													<td>Пластиковая бутылка</td>
+												</tr>
+												<tr>
+													<td>Производитель</td>
+													<td>Добрый</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+						</div>
+					</div>
+					<!-- Закуски -->
+					<div class="category">
+						<h3>Закуски</h3>
+						<div class="category-items">
+							<div class="item">
+								<img
+									src="img/menu/17.avif"
+									alt="Картофель фри" />
+								<p>Додстер с ветчиной</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Вес</td>
+										<td>150 г</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>150 ₽</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Соус</td>
+													<td>Кетчуп</td>
+												</tr>
+												<tr>
+													<td>Подача</td>
+													<td>Соленая</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+							<div class="item">
+								<img
+									src="img/menu/14.avif"
+									alt="Крылышки BBQ" />
+								<p>Дэнвич с курицей</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Вес</td>
+										<td>200 г</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>300 ₽</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Соус</td>
+													<td>Барбекю</td>
+												</tr>
+												<tr>
+													<td>Подача</td>
+													<td>С хрустящей корочкой</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+							<div class="item">
+								<img
+									src="img/menu/15.avif"
+									alt="Луковые кольца" />
+								<p>Дэнвич с мясом</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Вес</td>
+										<td>150 г</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>200 ₽</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Соус</td>
+													<td>Сырный</td>
+												</tr>
+												<tr>
+													<td>Подача</td>
+													<td>Хрустящие</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+							<div class="item">
+								<img
+									src="img/menu/16.avif"
+									alt="Начос с сыром" />
+								<p>Супермясной Додстер</p>
+								<table>
+									<tr>
+										<th>Параметр</th>
+										<th>Значение</th>
+									</tr>
+									<tr>
+										<td>Вес</td>
+										<td>180 г</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>250 ₽</td>
+									</tr>
+									<tr>
+										<td>Дополнительно</td>
+										<td>
+											<table>
+												<tr>
+													<th>Параметр</th>
+													<th>Значение</th>
+												</tr>
+												<tr>
+													<td>Соус</td>
+													<td>Сырный</td>
+												</tr>
+												<tr>
+													<td>Подача</td>
+													<td>С хрустящими начос</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<input
+									class="input"
+									type="number"
+									min="1"
+									value="1" />
+								<button onclick="buy(event)">В корзину</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div style="display: flex; justify-content: center; font-size: 24px; font-weight: 700">
+				<a href="#">На верх</a>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-content">
+				<div class="footer-section about">
+					<h2>PizzaPlace</h2>
+					<p>
+						Добро пожаловать в PizzaPlace! Мы предлагаем лучшие пиццы в городе с использованием
+						только самых свежих ингредиентов. Наслаждайтесь нашими блюдами в уютной атмосфере или
+						заказывайте на дом.
+					</p>
+				</div>
+				<div class="footer-section links">
+					<h2>Полезные ссылки</h2>
+					<ul>
+						<li><a href="#">Меню</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-section contact">
+					<h2>Контакты</h2>
+					<p>Телефон: +7 (123) 456-78-90</p>
+					<p>Email: contact@pizzaplace.com</p>
+					<p>Адрес: Наб. Чёрной речки, д.51, г. Санкт-Петербург</p>
+				</div>
+				<div class="footer-section social">
+					<h2>Мы в соцсетях</h2>
+					<div class="social-icons">
+						<a href="https://vk.com/feed"
+							><img
+								src="img/vk.png"
+								alt="VK"
+						/></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">&copy; 2024 PizzaPlace | Все права защищены</div>
+		</footer>
+		<!-- код внутри тега скрипт и также prompt и alert -->
+		<script>
+			function buy(event) {
+				event.preventDefault();
+				const item = event.target.parentElement;
+				const value = item.querySelector('.input').value;
+				const message = prompt(
+					'Спасибо за покупку! ' +
+						'Вы купили ' +
+						value +
+						' товаров' +
+						', на какой адрес оформить доставку?',
+				);
+				alert(`Спасибо за покупку! Вам доставят ${value} товаров по адресу ${message}`);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Контакты</title>
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<style>
+			body {
+				display: flex;
+				flex-direction: column;
+				height: 100vh;
+			}
+			main {
+				flex: 1 1 100%;
+			}
+		</style>
+		<script
+			defer
+			src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="wrapper">
+				<nav>
+					<ul>
+						<li
+							class="logo-img"
+							style="width: 75px">
+							<img
+								src="img/logo.png"
+								alt="" />
+						</li>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="menu.html">Меню</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div id="wrapper">
+				<section class="contact-section">
+					<h2>Контакты</h2>
+					<p>
+						Мы рады видеть вас в нашем кафе! Ниже вы найдете информацию о наших контактах, адресе и
+						часах работы.
+					</p>
+					<div class="contact-info">
+						<h3>Адрес</h3>
+						<p>Наб. Чёрной речки, д.51, г. Санкт-Петербург</p>
+						<h3>Телефон</h3>
+						<p>+7 (123) 456-78-90</p>
+						<h3>Электронная почта</h3>
+						<p>contact@pizzaplace.com</p>
+						<h3>Часы работы</h3>
+						<p>Пн-Вс: 10:00 - 22:00</p>
+					</div>
+					<h3>Напишите нам</h3>
+					<form>
+						<label for="name">Имя:</label>
+						<input
+							type="text"
+							id="name"
+							name="name"
+							required /><br /><br />
+						<label for="email">Email:</label>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							required /><br /><br />
+						<label for="message">Сообщение:</label><br />
+						<textarea
+							id="message"
+							name="message"
+							rows="4"
+							required></textarea
+						><br /><br />
+						<input
+							type="submit"
+							value="Отправить"
+							onclick=" sendMessage(event)" />
+					</form>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-content">
+				<div class="footer-section about">
+					<h2>PizzaPlace</h2>
+					<p>
+						Добро пожаловать в PizzaPlace! Мы предлагаем лучшие пиццы в городе с использованием
+						только самых свежих ингредиентов. Наслаждайтесь нашими блюдами в уютной атмосфере или
+						заказывайте на дом.
+					</p>
+				</div>
+				<div class="footer-section links">
+					<h2>Полезные ссылки</h2>
+					<ul>
+						<li><a href="#">Меню</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-section contact">
+					<h2>Контакты</h2>
+					<p>Телефон: +7 (123) 456-78-90</p>
+					<p>Email: contact@pizzaplace.com</p>
+					<p>Адрес: Наб. Чёрной речки, д.51, г. Санкт-Петербург</p>
+				</div>
+				<div class="footer-section social">
+					<h2>Мы в соцсетях</h2>
+					<div class="social-icons">
+						<a href="https://vk.com/feed"
+							><img
+								src="img/vk.png"
+								alt="VK"
+						/></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">&copy; 2024 PizzaPlace | Все права защищены</div>
+		</footer>
+	</body>
+</html>
